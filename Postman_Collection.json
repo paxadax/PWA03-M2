@@ -1,0 +1,3946 @@
+{
+	"info": {
+		"_postman_id": "7a9e8e6b-a931-48e8-97f4-f4141161705d",
+		"name": "progamacaoweb",
+		"description": "Contact Support:\n Name: paxadax\n Email: pedroazevedoduarte@gmail.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "categorias",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "produtos",
+							"item": [
+								{
+									"name": "Categoria Produto Controller.create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"aliquip adipisicing ut ipsum\",\n    \"categoriaId\": -23830053.84723091,\n    \"preco\": 78746423.12410125,\n    \"descricao\": \"Duis aute\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id/produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id",
+												"produtos"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "create a Produto model instance",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"nome\": \"aliquip adipisicing ut ipsum\",\n    \"categoriaId\": -23830053.84723091,\n    \"preco\": 78746423.12410125,\n    \"descricao\": \"Duis aute\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/categorias/:id/produtos",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categorias",
+														":id",
+														"produtos"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"nome\": \"cillum\",\n \"categoriaId\": 37349763.27756724,\n \"preco\": 71229314.26525834,\n \"descricao\": \"sunt dolore\",\n \"id\": 56034178.09201336\n}"
+										}
+									]
+								},
+								{
+									"name": "Categoria Produto Controller.patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id/produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Categoria.Produto PATCH success count",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/categorias/:id/produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categorias",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								},
+								{
+									"name": "Categoria Produto Controller.find",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id/produtos?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Array of Categoria has many Produto through CategoriaProduto",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/categorias/:id/produtos?filter=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categorias",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "filter",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n {\n  \"nome\": \"eiusmod consectetur commodo reprehenderit \",\n  \"categoriaId\": -14696400.798724115,\n  \"preco\": 41435663.60007137,\n  \"descricao\": \"eiusmod est fugiat sint dolor\",\n  \"id\": 85290300.26257974\n },\n {\n  \"nome\": \"pariatur sunt\",\n  \"categoriaId\": -84641598.74127324,\n  \"preco\": -32057830.855238885,\n  \"descricao\": \"quis eu ullamco Duis\",\n  \"id\": -83357564.06523079\n }\n]"
+										}
+									]
+								},
+								{
+									"name": "Categoria Produto Controller.delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id/produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Categoria.Produto DELETE success count",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/categorias/:id/produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categorias",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Categoria Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"tipo\": \"nulla do\",\n    \"id\": 52598995.22419408\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"tipo\": \"nulla do\",\n    \"id\": 52598995.22419408\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Categoria Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 36716787.16524696,\n    \"tipo\": \"occa\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": 36716787.16524696,\n    \"tipo\": \"occa\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Categoria Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Categoria model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"tipo\": \"est\",\n \"id\": 15351073.87241976,\n \"produtos\": [\n  {\n   \"nome\": \"laboris sunt\",\n   \"categoriaId\": -7359604.332771763,\n   \"preco\": 7897083.467998028,\n   \"descricao\": \"est proident in\",\n   \"id\": -58748964.32567369,\n   \"stocks\": [\n    {\n     \"produtoId\": 1942084.6745013446,\n     \"quantidade\": 33235462.338079855,\n     \"id\": 91016410.71853095\n    },\n    {\n     \"produtoId\": 41286953.12286976,\n     \"quantidade\": -79336550.05904013,\n     \"id\": -96835600.55888715\n    }\n   ]\n  },\n  {\n   \"nome\": \"enim in aliquip\",\n   \"categoriaId\": 29009081.087394148,\n   \"preco\": 33148513.81640826,\n   \"descricao\": \"deserunt adipisicing\",\n   \"id\": -12683311.795832843,\n   \"stocks\": [\n    {\n     \"produtoId\": -32795721.101829752,\n     \"quantidade\": 41130575.5072929,\n     \"id\": -72836433.43202618\n    },\n    {\n     \"produtoId\": -97920405.2082951,\n     \"quantidade\": 84992047.35610637,\n     \"id\": 34104527.29336946\n    }\n   ]\n  }\n ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Categoria Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categorias/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categorias",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tipo\": \"ex nostrud\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categorias",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Categoria model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"tipo\": \"ex nostrud\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"tipo\": \"nulla do\",\n \"id\": 52598995.22419408\n}"
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 36716787.16524696,\n    \"tipo\": \"occa\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categorias?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Categoria PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 36716787.16524696,\n    \"tipo\": \"occa\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categorias?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/categorias?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Categoria model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"tipo\": \"irure adipisici\",\n  \"id\": -17874138.41007535,\n  \"produtos\": [\n   {\n    \"nome\": \"mollit incididunt eu Excepteur\",\n    \"categoriaId\": -11362253.090417832,\n    \"preco\": 58236767.25205317,\n    \"descricao\": \"vo\",\n    \"id\": -85226772.0350771,\n    \"stocks\": [\n     {\n      \"produtoId\": -67185338.77436408,\n      \"quantidade\": -76562661.22386134,\n      \"id\": 15871380.730870888\n     },\n     {\n      \"produtoId\": 97768515.95628163,\n      \"quantidade\": -89969845.62525609,\n      \"id\": 62376346.123097956\n     }\n    ]\n   },\n   {\n    \"nome\": \"veniam commodo laborum\",\n    \"categoriaId\": -47976538.35121274,\n    \"preco\": -78884363.17264605,\n    \"descricao\": \"sit do eu laborum\",\n    \"id\": 21872159.070197657,\n    \"stocks\": [\n     {\n      \"produtoId\": -42916270.28837812,\n      \"quantidade\": 88782905.83386299,\n      \"id\": 90717039.77480632\n     },\n     {\n      \"produtoId\": 57370188.862222105,\n      \"quantidade\": -2695813.455753982,\n      \"id\": 92827137.85832545\n     }\n    ]\n   }\n  ]\n },\n {\n  \"tipo\": \"officia ullamco velit commodo\",\n  \"id\": 75343137.78372553,\n  \"produtos\": [\n   {\n    \"nome\": \"id enim eiusmod\",\n    \"categoriaId\": 8420787.695767596,\n    \"preco\": -30898405.75731513,\n    \"descricao\": \"enim eiusmod adipisicing occaecat\",\n    \"id\": 67165032.89483288,\n    \"stocks\": [\n     {\n      \"produtoId\": 54201405.40177959,\n      \"quantidade\": 22425117.30923602,\n      \"id\": -49734431.99726848\n     },\n     {\n      \"produtoId\": -16680902.98760143,\n      \"quantidade\": -73818758.53023604,\n      \"id\": -40316009.838991195\n     }\n    ]\n   },\n   {\n    \"nome\": \"exercitation enim Excepteur nulla\",\n    \"categoriaId\": 91621116.05602217,\n    \"preco\": 13822016.935864314,\n    \"descricao\": \"veniam adipisicing consequat et sit\",\n    \"id\": 18000393.92865154,\n    \"stocks\": [\n     {\n      \"produtoId\": -508433.4286593646,\n      \"quantidade\": 8777358.809483051,\n      \"id\": 53751473.558719754\n     },\n     {\n      \"produtoId\": -4836857.768902153,\n      \"quantidade\": 2920177.8394130915,\n      \"id\": -42702887.00120433\n     }\n    ]\n   }\n  ]\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Categoria Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/categorias/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categorias",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Categoria model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categorias/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categorias",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "encomendas",
+							"item": [
+								{
+									"name": "Cliente Encomenda Controller.create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"clienteId\": -75028351.69629982,\n    \"produtoId\": 53272963.362959385,\n    \"quantidade\": -11018324.962959796,\n    \"total\": -1496445.407638222\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id/encomendas",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id",
+												"encomendas"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "create a Encomenda model instance",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"clienteId\": -75028351.69629982,\n    \"produtoId\": 53272963.362959385,\n    \"quantidade\": -11018324.962959796,\n    \"total\": -1496445.407638222\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/clientes/:id/encomendas",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"clientes",
+														":id",
+														"encomendas"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"clienteId\": -28190220.37407893,\n \"produtoId\": 37292611.49618375,\n \"quantidade\": -18515326.511146218,\n \"total\": 18477767.12159051,\n \"id\": 31847581.079532266\n}"
+										}
+									]
+								},
+								{
+									"name": "Cliente Encomenda Controller.patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": 3861746.5531300455,\n    \"clienteId\": -66541202.45084791,\n    \"produtoId\": -34132164.081323646,\n    \"quantidade\": 61931100.7502338,\n    \"total\": 13131151.128908947\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id/encomendas?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id",
+												"encomendas"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Cliente.Encomenda PATCH success count",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"id\": 3861746.5531300455,\n    \"clienteId\": -66541202.45084791,\n    \"produtoId\": -34132164.081323646,\n    \"quantidade\": 61931100.7502338,\n    \"total\": 13131151.128908947\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/clientes/:id/encomendas?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"clientes",
+														":id",
+														"encomendas"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								},
+								{
+									"name": "Cliente Encomenda Controller.find",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id/encomendas?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id",
+												"encomendas"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Array of Cliente has many Encomenda through ClienteEncomenda",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/clientes/:id/encomendas?filter=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"clientes",
+														":id",
+														"encomendas"
+													],
+													"query": [
+														{
+															"key": "filter",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n {\n  \"clienteId\": 99775730.43873605,\n  \"produtoId\": 27585482.902867794,\n  \"quantidade\": 88597818.3546404,\n  \"total\": -3619875.416836709,\n  \"id\": -83595216.51702315\n },\n {\n  \"clienteId\": -67883193.91882469,\n  \"produtoId\": 83479756.4242422,\n  \"quantidade\": -65159534.753939986,\n  \"total\": 67349091.22470483,\n  \"id\": 2792678.3288124055\n }\n]"
+										}
+									]
+								},
+								{
+									"name": "Cliente Encomenda Controller.delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id/encomendas?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id",
+												"encomendas"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Cliente.Encomenda DELETE success count",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/clientes/:id/encomendas?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"clientes",
+														":id",
+														"encomendas"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Cliente Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"dolor ex eu esse\",\n    \"dataNasc\": \"exercitation\",\n    \"nif\": 68299887.01497012,\n    \"morada\": \"anim incididunt minim cupidatat\",\n    \"id\": 5858831.89156653\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"dolor ex eu esse\",\n    \"dataNasc\": \"exercitation\",\n    \"nif\": 68299887.01497012,\n    \"morada\": \"anim incididunt minim cupidatat\",\n    \"id\": 5858831.89156653\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Cliente Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 83307179.29680169,\n    \"nome\": \"nulla\",\n    \"dataNasc\": \"incididunt aliquip\",\n    \"nif\": -20175806.400268838,\n    \"morada\": \"officia laboris consequat\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": 83307179.29680169,\n    \"nome\": \"nulla\",\n    \"dataNasc\": \"incididunt aliquip\",\n    \"nif\": -20175806.400268838,\n    \"morada\": \"officia laboris consequat\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Cliente Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Cliente model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"nome\": \"tempor voluptate ad occaecat deserunt\",\n \"dataNasc\": \"aliquip veniam l\",\n \"nif\": -60227420.21362144,\n \"morada\": \"consequat\",\n \"id\": 41138969.35995275,\n \"encomendas\": [\n  {\n   \"clienteId\": -97645646.92016421,\n   \"produtoId\": 62738140.4733367,\n   \"quantidade\": 23208412.594634846,\n   \"total\": -15378885.57719414,\n   \"id\": -51895897.548881106,\n   \"produtos\": [\n    {\n     \"nome\": \"aliqua\",\n     \"categoriaId\": 9253579.360928118,\n     \"preco\": -72944747.1640555,\n     \"descricao\": \"cillum consectetur consequat elit\",\n     \"id\": -62547601.79216219,\n     \"stocks\": [\n      {\n       \"produtoId\": 4653101.341807723,\n       \"quantidade\": 26052002.68284808,\n       \"id\": 94090102.43258783\n      },\n      {\n       \"produtoId\": -95627333.99019057,\n       \"quantidade\": 40390747.4624258,\n       \"id\": -82160288.54496646\n      }\n     ]\n    },\n    {\n     \"nome\": \"Lorem in reprehenderit\",\n     \"categoriaId\": 94088676.16229525,\n     \"preco\": -99776272.14105053,\n     \"descricao\": \"ipsum sed\",\n     \"id\": 54701023.41808921,\n     \"stocks\": [\n      {\n       \"produtoId\": -93839162.25461876,\n       \"quantidade\": -52427877.32538359,\n       \"id\": -43827485.76658959\n      },\n      {\n       \"produtoId\": -72199043.68187651,\n       \"quantidade\": 87331657.20003,\n       \"id\": 9270779.246779218\n      }\n     ]\n    }\n   ]\n  },\n  {\n   \"clienteId\": -9502186.495011374,\n   \"produtoId\": 73056163.50004295,\n   \"quantidade\": -8526669.066022485,\n   \"total\": -23614602.042172804,\n   \"id\": 44163478.80470356,\n   \"produtos\": [\n    {\n     \"nome\": \"incididunt sed\",\n     \"categoriaId\": 73374962.73327616,\n     \"preco\": 15648939.670712769,\n     \"descricao\": \"velit esse\",\n     \"id\": -34621011.413046874,\n     \"stocks\": [\n      {\n       \"produtoId\": -54641905.77267934,\n       \"quantidade\": 29735912.062354147,\n       \"id\": -28826123.730212808\n      },\n      {\n       \"produtoId\": -33038745.098980725,\n       \"quantidade\": 74093427.15406618,\n       \"id\": 87441807.73052931\n      }\n     ]\n    },\n    {\n     \"nome\": \"deserunt aliquip velit\",\n     \"categoriaId\": 44189348.89107677,\n     \"preco\": -59102087.42188865,\n     \"descricao\": \"sit deserunt sint\",\n     \"id\": -70904624.64420462,\n     \"stocks\": [\n      {\n       \"produtoId\": 1794031.4817437232,\n       \"quantidade\": -55446577.6436202,\n       \"id\": 2031834.937665835\n      },\n      {\n       \"produtoId\": -59576996.51955064,\n       \"quantidade\": 80998372.6890629,\n       \"id\": -2262995.3912423104\n      }\n     ]\n    }\n   ]\n  }\n ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Cliente Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cliente Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Duis Lorem ea\",\n    \"dataNasc\": \"reprehenderit incididunt\",\n    \"nif\": -10161992.477185369,\n    \"morada\": \"aute Excepteur amet\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cliente model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Duis Lorem ea\",\n    \"dataNasc\": \"reprehenderit incididunt\",\n    \"nif\": -10161992.477185369,\n    \"morada\": \"aute Excepteur amet\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"nome\": \"dolor ex eu esse\",\n \"dataNasc\": \"exercitation\",\n \"nif\": 68299887.01497012,\n \"morada\": \"anim incididunt minim cupidatat\",\n \"id\": 5858831.89156653\n}"
+						}
+					]
+				},
+				{
+					"name": "Cliente Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 83307179.29680169,\n    \"nome\": \"nulla\",\n    \"dataNasc\": \"incididunt aliquip\",\n    \"nif\": -20175806.400268838,\n    \"morada\": \"officia laboris consequat\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clientes?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cliente PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 83307179.29680169,\n    \"nome\": \"nulla\",\n    \"dataNasc\": \"incididunt aliquip\",\n    \"nif\": -20175806.400268838,\n    \"morada\": \"officia laboris consequat\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				},
+				{
+					"name": "Cliente Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clientes?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Cliente model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"nome\": \"exercitation voluptate cupidatat\",\n  \"dataNasc\": \"pariatur cillum aliquip reprehenderit\",\n  \"nif\": 88047354.63184667,\n  \"morada\": \"laboris Excepteur\",\n  \"id\": -93992139.08220871,\n  \"encomendas\": [\n   {\n    \"clienteId\": 43075035.82292199,\n    \"produtoId\": 46681038.85015881,\n    \"quantidade\": 38855821.50594616,\n    \"total\": 19105840.951926023,\n    \"id\": 65772353.34629002,\n    \"produtos\": [\n     {\n      \"nome\": \"id\",\n      \"categoriaId\": -47670579.21212961,\n      \"preco\": 88605670.33171472,\n      \"descricao\": \"irure et\",\n      \"id\": 26753529.137638748,\n      \"stocks\": [\n       {\n        \"produtoId\": 977452.6148120761,\n        \"quantidade\": 80840568.12282333,\n        \"id\": -15168768.656111002\n       },\n       {\n        \"produtoId\": 26749855.375457093,\n        \"quantidade\": 52627288.195174605,\n        \"id\": 27426147.338944823\n       }\n      ]\n     },\n     {\n      \"nome\": \"do fu\",\n      \"categoriaId\": 93457778.06133601,\n      \"preco\": -44558558.16186016,\n      \"descricao\": \"cupidatat\",\n      \"id\": -33130556.873590633,\n      \"stocks\": [\n       {\n        \"produtoId\": -79679739.65754957,\n        \"quantidade\": -71677887.7586262,\n        \"id\": -62824280.371664055\n       },\n       {\n        \"produtoId\": -19673860.36079648,\n        \"quantidade\": -56048477.65088472,\n        \"id\": 28012259.914117172\n       }\n      ]\n     }\n    ]\n   },\n   {\n    \"clienteId\": -48602573.073300004,\n    \"produtoId\": -37049731.9396796,\n    \"quantidade\": 81608067.33881417,\n    \"total\": 89216928.75362837,\n    \"id\": 43457958.28422281,\n    \"produtos\": [\n     {\n      \"nome\": \"adipisicing ex proident nulla\",\n      \"categoriaId\": -9356760.307190552,\n      \"preco\": -80027127.89027786,\n      \"descricao\": \"non in dolor elit\",\n      \"id\": 64309426.39830035,\n      \"stocks\": [\n       {\n        \"produtoId\": 81808633.57465738,\n        \"quantidade\": -83000188.67694803,\n        \"id\": -81476553.75597745\n       },\n       {\n        \"produtoId\": 91925156.55729893,\n        \"quantidade\": -32509269.156094864,\n        \"id\": -84418013.80854414\n       }\n      ]\n     },\n     {\n      \"nome\": \"proident ipsum Lorem anim\",\n      \"categoriaId\": 7919776.058826551,\n      \"preco\": -18607936.496258408,\n      \"descricao\": \"do eu esse sit\",\n      \"id\": 97017240.2748828,\n      \"stocks\": [\n       {\n        \"produtoId\": -49026379.8556565,\n        \"quantidade\": 47597278.92202145,\n        \"id\": -43530319.89737697\n       },\n       {\n        \"produtoId\": 88128006.64171335,\n        \"quantidade\": -15591121.459354356,\n        \"id\": 83512558.95731401\n       }\n      ]\n     }\n    ]\n   }\n  ]\n },\n {\n  \"nome\": \"nostrud labore Lorem magna\",\n  \"dataNasc\": \"dolor\",\n  \"nif\": -56896210.86721552,\n  \"morada\": \"irure proident aliqua\",\n  \"id\": -3015585.965952724,\n  \"encomendas\": [\n   {\n    \"clienteId\": -40943388.52228261,\n    \"produtoId\": -95310124.7600744,\n    \"quantidade\": -92255909.35238266,\n    \"total\": 64049145.49054137,\n    \"id\": -68365642.20316723,\n    \"produtos\": [\n     {\n      \"nome\": \"esse in pariatur\",\n      \"categoriaId\": -39357255.487431295,\n      \"preco\": -78867431.86330794,\n      \"descricao\": \"cillum consequat\",\n      \"id\": 22268287.747995734,\n      \"stocks\": [\n       {\n        \"produtoId\": 70755726.60825312,\n        \"quantidade\": 67793474.11923209,\n        \"id\": -1023178.5385173857\n       },\n       {\n        \"produtoId\": -66089709.10127709,\n        \"quantidade\": 70291893.30876955,\n        \"id\": -37026271.89150296\n       }\n      ]\n     },\n     {\n      \"nome\": \"ut aute deserunt\",\n      \"categoriaId\": -27971231.09524615,\n      \"preco\": 44564544.23106822,\n      \"descricao\": \"aliquip consequat voluptate fugiat\",\n      \"id\": 36096057.63642067,\n      \"stocks\": [\n       {\n        \"produtoId\": 96815926.34794813,\n        \"quantidade\": -43247345.60868264,\n        \"id\": 84346141.2157594\n       },\n       {\n        \"produtoId\": 84011193.49866733,\n        \"quantidade\": 7922174.833025947,\n        \"id\": 66343545.78733447\n       }\n      ]\n     }\n    ]\n   },\n   {\n    \"clienteId\": -43918072.10133663,\n    \"produtoId\": 2984470.306384295,\n    \"quantidade\": 98838609.69435102,\n    \"total\": -51514115.7091457,\n    \"id\": -6717992.937255606,\n    \"produtos\": [\n     {\n      \"nome\": \"Ut\",\n      \"categoriaId\": -73930151.24210605,\n      \"preco\": 61103844.492681205,\n      \"descricao\": \"id nostrud\",\n      \"id\": 52940331.83323857,\n      \"stocks\": [\n       {\n        \"produtoId\": 23205882.28378883,\n        \"quantidade\": -18766281.560038984,\n        \"id\": 33230979.17650996\n       },\n       {\n        \"produtoId\": -19427934.34008494,\n        \"quantidade\": 13571525.259489283,\n        \"id\": -92926429.7052561\n       }\n      ]\n     },\n     {\n      \"nome\": \"\",\n      \"categoriaId\": -69927925.92099696,\n      \"preco\": -90462361.94936013,\n      \"descricao\": \"nostrud eu\",\n      \"id\": 68283527.83992213,\n      \"stocks\": [\n       {\n        \"produtoId\": 69903854.59415251,\n        \"quantidade\": -27115895.556528226,\n        \"id\": 27298921.91115044\n       },\n       {\n        \"produtoId\": 98857486.05037999,\n        \"quantidade\": -8674922.262624606,\n        \"id\": -13195698.300481603\n       }\n      ]\n     }\n    ]\n   }\n  ]\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Cliente Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clientes/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cliente model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "encomendas",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "produtos",
+							"item": [
+								{
+									"name": "Encomenda Produto Controller.create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"laboris exercitation consectetur\",\n    \"categoriaId\": 51884884.518932134,\n    \"preco\": -93687974.27222724,\n    \"descricao\": \"eu labore\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id/produtos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id",
+												"produtos"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "create a Produto model instance",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"nome\": \"laboris exercitation consectetur\",\n    \"categoriaId\": 51884884.518932134,\n    \"preco\": -93687974.27222724,\n    \"descricao\": \"eu labore\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/encomendas/:id/produtos",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"encomendas",
+														":id",
+														"produtos"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"nome\": \"cillum\",\n \"categoriaId\": 37349763.27756724,\n \"preco\": 71229314.26525834,\n \"descricao\": \"sunt dolore\",\n \"id\": 56034178.09201336\n}"
+										}
+									]
+								},
+								{
+									"name": "Encomenda Produto Controller.patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id/produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Encomenda.Produto PATCH success count",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/encomendas/:id/produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"encomendas",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								},
+								{
+									"name": "Encomenda Produto Controller.find",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id/produtos?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Array of Encomenda has many Produto through EncomendaProduto",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/encomendas/:id/produtos?filter=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"encomendas",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "filter",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n {\n  \"nome\": \"eiusmod consectetur commodo reprehenderit \",\n  \"categoriaId\": -14696400.798724115,\n  \"preco\": 41435663.60007137,\n  \"descricao\": \"eiusmod est fugiat sint dolor\",\n  \"id\": 85290300.26257974\n },\n {\n  \"nome\": \"pariatur sunt\",\n  \"categoriaId\": -84641598.74127324,\n  \"preco\": -32057830.855238885,\n  \"descricao\": \"quis eu ullamco Duis\",\n  \"id\": -83357564.06523079\n }\n]"
+										}
+									]
+								},
+								{
+									"name": "Encomenda Produto Controller.delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id/produtos?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id",
+												"produtos"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Encomenda.Produto DELETE success count",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/encomendas/:id/produtos?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"encomendas",
+														":id",
+														"produtos"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Encomenda Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"clienteId\": -28190220.37407893,\n    \"produtoId\": 37292611.49618375,\n    \"quantidade\": -18515326.511146218,\n    \"total\": 18477767.12159051,\n    \"id\": 31847581.079532266\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/encomendas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"clienteId\": -28190220.37407893,\n    \"produtoId\": 37292611.49618375,\n    \"quantidade\": -18515326.511146218,\n    \"total\": 18477767.12159051,\n    \"id\": 31847581.079532266\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Encomenda Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 3861746.5531300455,\n    \"clienteId\": -66541202.45084791,\n    \"produtoId\": -34132164.081323646,\n    \"quantidade\": 61931100.7502338,\n    \"total\": 13131151.128908947\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/encomendas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": 3861746.5531300455,\n    \"clienteId\": -66541202.45084791,\n    \"produtoId\": -34132164.081323646,\n    \"quantidade\": 61931100.7502338,\n    \"total\": 13131151.128908947\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Encomenda Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/encomendas/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Encomenda model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"clienteId\": 3070269.593091935,\n \"produtoId\": -28753812.24104801,\n \"quantidade\": -47364606.17109524,\n \"total\": 99579277.89160591,\n \"id\": 21165299.09186022,\n \"produtos\": [\n  {\n   \"nome\": \"enim ex consequat ut incididunt\",\n   \"categoriaId\": -23419598.807193205,\n   \"preco\": -10883807.664210916,\n   \"descricao\": \"ex\",\n   \"id\": 28480501.37119244,\n   \"stocks\": [\n    {\n     \"produtoId\": -20330101.531857997,\n     \"quantidade\": -66090202.15743673,\n     \"id\": -91632734.80434246\n    },\n    {\n     \"produtoId\": 55008605.43485877,\n     \"quantidade\": -6222895.638742581,\n     \"id\": -94165919.68858628\n    }\n   ]\n  },\n  {\n   \"nome\": \"ut id enim velit\",\n   \"categoriaId\": 70828021.33445144,\n   \"preco\": 7824722.822094187,\n   \"descricao\": \"esse ali\",\n   \"id\": -59563515.29703743,\n   \"stocks\": [\n    {\n     \"produtoId\": 12048865.009457543,\n     \"quantidade\": 77869240.9775542,\n     \"id\": 93532084.55292657\n    },\n    {\n     \"produtoId\": 23676709.921711758,\n     \"quantidade\": -63296825.04094807,\n     \"id\": -55431079.997147895\n    }\n   ]\n  }\n ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Encomenda Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/encomendas/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/encomendas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"encomendas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Encomenda Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clienteId\": -21999776.95798166,\n    \"produtoId\": -58327523.67612226,\n    \"quantidade\": -71769123.40279382,\n    \"total\": -33669976.26871151\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/encomendas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"encomendas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Encomenda model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"clienteId\": -21999776.95798166,\n    \"produtoId\": -58327523.67612226,\n    \"quantidade\": -71769123.40279382,\n    \"total\": -33669976.26871151\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/encomendas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"clienteId\": -28190220.37407893,\n \"produtoId\": 37292611.49618375,\n \"quantidade\": -18515326.511146218,\n \"total\": 18477767.12159051,\n \"id\": 31847581.079532266\n}"
+						}
+					]
+				},
+				{
+					"name": "Encomenda Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3861746.5531300455,\n    \"clienteId\": -66541202.45084791,\n    \"produtoId\": -34132164.081323646,\n    \"quantidade\": 61931100.7502338,\n    \"total\": 13131151.128908947\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/encomendas?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"encomendas"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Encomenda PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 3861746.5531300455,\n    \"clienteId\": -66541202.45084791,\n    \"produtoId\": -34132164.081323646,\n    \"quantidade\": 61931100.7502338,\n    \"total\": 13131151.128908947\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/encomendas?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				},
+				{
+					"name": "Encomenda Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/encomendas?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"encomendas"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Encomenda model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/encomendas?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"clienteId\": 80469482.1134421,\n  \"produtoId\": -60879118.74800285,\n  \"quantidade\": 54387550.124964565,\n  \"total\": 43741130.52472854,\n  \"id\": -49538647.51348762,\n  \"produtos\": [\n   {\n    \"nome\": \"commodo amet cillum\",\n    \"categoriaId\": -27601294.30787553,\n    \"preco\": -13883590.498653173,\n    \"descricao\": \"sit Excepteur minim\",\n    \"id\": -95210490.3358455,\n    \"stocks\": [\n     {\n      \"produtoId\": -80059980.61017796,\n      \"quantidade\": -28416745.29203701,\n      \"id\": -53901937.47631664\n     },\n     {\n      \"produtoId\": -25666432.331475824,\n      \"quantidade\": -66524791.0703906,\n      \"id\": 44402032.72299287\n     }\n    ]\n   },\n   {\n    \"nome\": \"Duis velit nostrud\",\n    \"categoriaId\": -67652215.11873744,\n    \"preco\": 91277003.3799727,\n    \"descricao\": \"anim eu est pariatur\",\n    \"id\": -28591854.738865808,\n    \"stocks\": [\n     {\n      \"produtoId\": 91674918.44091308,\n      \"quantidade\": -83311063.66277239,\n      \"id\": 18022440.88363847\n     },\n     {\n      \"produtoId\": 66246557.871059716,\n      \"quantidade\": 63008456.09107736,\n      \"id\": 69718960.00245762\n     }\n    ]\n   }\n  ]\n },\n {\n  \"clienteId\": 45521054.04853225,\n  \"produtoId\": -94074213.52847373,\n  \"quantidade\": 10417618.38853477,\n  \"total\": -57466565.365048975,\n  \"id\": 76490697.29204902,\n  \"produtos\": [\n   {\n    \"nome\": \"dolore in\",\n    \"categoriaId\": 19241044.818987295,\n    \"preco\": 80879870.29123464,\n    \"descricao\": \"do sed deserunt labore\",\n    \"id\": -88947086.79012404,\n    \"stocks\": [\n     {\n      \"produtoId\": -34335760.95493178,\n      \"quantidade\": 40249210.074608535,\n      \"id\": -5402874.372470334\n     },\n     {\n      \"produtoId\": 87485245.65296978,\n      \"quantidade\": -99268309.62921782,\n      \"id\": 72561264.48183364\n     }\n    ]\n   },\n   {\n    \"nome\": \"in ex\",\n    \"categoriaId\": 41931827.72938785,\n    \"preco\": 69984217.25103226,\n    \"descricao\": \"dolore adipisicing veniam mollit\",\n    \"id\": -15792518.781534031,\n    \"stocks\": [\n     {\n      \"produtoId\": 39029478.857941896,\n      \"quantidade\": 70993079.85400754,\n      \"id\": 96605715.5220542\n     },\n     {\n      \"produtoId\": -37555999.79347464,\n      \"quantidade\": 57824628.484413,\n      \"id\": -13865969.871036783\n     }\n    ]\n   }\n  ]\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Encomenda Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/encomendas/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"encomendas",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Encomenda model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/encomendas/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"encomendas",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "produtos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "stocks",
+							"item": [
+								{
+									"name": "Produto Stock Controller.create",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"quantidade\": 44845684.04175392,\n    \"produtoId\": -88870750.49652986\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/stocks",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"stocks"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Produto model instance",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"quantidade\": 44845684.04175392,\n    \"produtoId\": -88870750.49652986\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/stocks",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"stocks"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"produtoId\": 96444463.8976298,\n \"quantidade\": 34665299.39087394,\n \"id\": 70729143.17031026\n}"
+										}
+									]
+								},
+								{
+									"name": "Produto Stock Controller.patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -34813817.74608128,\n    \"produtoId\": -4613673.049503133,\n    \"quantidade\": -47875634.29759416\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/stocks?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"stocks"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Produto.Stock PATCH success count",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"id\": -34813817.74608128,\n    \"produtoId\": -4613673.049503133,\n    \"quantidade\": -47875634.29759416\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/stocks?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"stocks"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								},
+								{
+									"name": "Produto Stock Controller.find",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/stocks?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"stocks"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Array of Produto has many Stock",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/stocks?filter=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"stocks"
+													],
+													"query": [
+														{
+															"key": "filter",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "[\n {\n  \"produtoId\": 71168226.79726109,\n  \"quantidade\": -73751556.74857101,\n  \"id\": 30233116.92428261\n },\n {\n  \"produtoId\": 23511327.279402122,\n  \"quantidade\": 42845567.90020394,\n  \"id\": 19596202.45413874\n }\n]"
+										}
+									]
+								},
+								{
+									"name": "Produto Stock Controller.delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id/stocks?where=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id",
+												"stocks"
+											],
+											"query": [
+												{
+													"key": "where",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1050054.862823397",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Produto.Stock DELETE success count",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/produtos/:id/stocks?where=",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"produtos",
+														":id",
+														"stocks"
+													],
+													"query": [
+														{
+															"key": "where",
+															"value": ""
+														}
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"count\": -8267077.441003904\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Produto Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"cillum\",\n    \"categoriaId\": 37349763.27756724,\n    \"preco\": 71229314.26525834,\n    \"descricao\": \"sunt dolore\",\n    \"id\": 56034178.09201336\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"cillum\",\n    \"categoriaId\": 37349763.27756724,\n    \"preco\": 71229314.26525834,\n    \"descricao\": \"sunt dolore\",\n    \"id\": 56034178.09201336\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Produto Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Produto Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Produto model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"nome\": \"consectetur non qui\",\n \"categoriaId\": 22809273.32624963,\n \"preco\": -53914023.978189275,\n \"descricao\": \"commodo in fugiat\",\n \"id\": -1749530.0417286009,\n \"stocks\": [\n  {\n   \"produtoId\": -83829078.1917479,\n   \"quantidade\": -6872546.532566622,\n   \"id\": -98464858.67391248\n  },\n  {\n   \"produtoId\": 30270450.843561485,\n   \"quantidade\": 77808535.92279989,\n   \"id\": -39272593.96489578\n  }\n ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Produto Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/produtos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"produtos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Produto Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"consequat cillum\",\n    \"categoriaId\": 68729820.49981621,\n    \"preco\": 30881614.93301551,\n    \"descricao\": \"cillum Ut\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/produtos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Produto model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"consequat cillum\",\n    \"categoriaId\": 68729820.49981621,\n    \"preco\": 30881614.93301551,\n    \"descricao\": \"cillum Ut\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"nome\": \"cillum\",\n \"categoriaId\": 37349763.27756724,\n \"preco\": 71229314.26525834,\n \"descricao\": \"sunt dolore\",\n \"id\": 56034178.09201336\n}"
+						}
+					]
+				},
+				{
+					"name": "Produto Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/produtos?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Produto PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -92381411.27734613,\n    \"nome\": \"anim \",\n    \"categoriaId\": -50903664.21840193,\n    \"preco\": 91007214.99380797,\n    \"descricao\": \"enim culpa Duis\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/produtos?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				},
+				{
+					"name": "Produto Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/produtos?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Produto model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"nome\": \"laborum nulla Duis\",\n  \"categoriaId\": 90275242.24802229,\n  \"preco\": 24887624.68860735,\n  \"descricao\": \"fugiat qui cupidatat \",\n  \"id\": -46852828.02539916,\n  \"stocks\": [\n   {\n    \"produtoId\": 3269170.4093243033,\n    \"quantidade\": -82902611.31697157,\n    \"id\": -81754602.57294591\n   },\n   {\n    \"produtoId\": -91897756.96953037,\n    \"quantidade\": 7865723.377678528,\n    \"id\": 82602962.09060284\n   }\n  ]\n },\n {\n  \"nome\": \"ex incididunt culpa\",\n  \"categoriaId\": 54457897.49000326,\n  \"preco\": -53527425.74673979,\n  \"descricao\": \"laboris ut aute sit\",\n  \"id\": 50136759.668166876,\n  \"stocks\": [\n   {\n    \"produtoId\": -5867526.792573988,\n    \"quantidade\": -70280616.10471487,\n    \"id\": -56929287.75834174\n   },\n   {\n    \"produtoId\": -80414783.69651145,\n    \"quantidade\": -93618721.63805299,\n    \"id\": -21139227.136228606\n   }\n  ]\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Produto Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/produtos/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"produtos",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Produto model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/produtos/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"produtos",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "stocks",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Stock Controller.replace By Id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"produtoId\": 96444463.8976298,\n    \"quantidade\": 34665299.39087394,\n    \"id\": 70729143.17031026\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"produtoId\": 96444463.8976298,\n    \"quantidade\": 34665299.39087394,\n    \"id\": 70729143.17031026\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Stock Controller.update By Id",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -34813817.74608128,\n    \"produtoId\": -4613673.049503133,\n    \"quantidade\": -47875634.29759416\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -34813817.74608128,\n    \"produtoId\": -4613673.049503133,\n    \"quantidade\": -47875634.29759416\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Stock Controller.find By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Stock model instance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id?filter=",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"query": [
+												{
+													"key": "filter",
+													"value": ""
+												}
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"produtoId\": 61167956.8496955,\n \"quantidade\": 54755401.86678743,\n \"id\": 78378394.49068797\n}"
+								}
+							]
+						},
+						{
+							"name": "Stock Controller.delete By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/stocks/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1050054.862823397",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/stocks/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"stocks",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Stock Controller.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"produtoId\": 41622960.78302914,\n    \"quantidade\": 32366282.74731177\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/stocks",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stocks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Stock model instance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"produtoId\": 41622960.78302914,\n    \"quantidade\": 32366282.74731177\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/stocks",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"produtoId\": 96444463.8976298,\n \"quantidade\": 34665299.39087394,\n \"id\": 70729143.17031026\n}"
+						}
+					]
+				},
+				{
+					"name": "Stock Controller.update All",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": -34813817.74608128,\n    \"produtoId\": -4613673.049503133,\n    \"quantidade\": -47875634.29759416\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/stocks?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stocks"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Stock PATCH success count",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -34813817.74608128,\n    \"produtoId\": -4613673.049503133,\n    \"quantidade\": -47875634.29759416\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/stocks?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				},
+				{
+					"name": "Stock Controller.find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/stocks?filter=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stocks"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Array of Stock model instances",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/stocks?filter=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"produtoId\": -38912511.23210959,\n  \"quantidade\": 23767750.068693966,\n  \"id\": 59539655.32061663\n },\n {\n  \"produtoId\": -39256610.458613396,\n  \"quantidade\": -27893444.247227654,\n  \"id\": 88500757.76368585\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "Stock Controller.count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/stocks/count?where=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"stocks",
+								"count"
+							],
+							"query": [
+								{
+									"key": "where",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Stock model count",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/stocks/count?where=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"stocks",
+										"count"
+									],
+									"query": [
+										{
+											"key": "where",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"count\": -8267077.441003904\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ping Controller.ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/ping",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Ping Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ping",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"greeting\": \"sed reprehenderit labore non amet\",\n \"date\": \"in est culpa ad magna\",\n \"url\": \"occaecat irure eu aliquip\",\n \"headers\": {\n  \"Content-Type\": \"Ut exercitation ex anim\"\n }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://[::1]:3000",
+			"type": "string"
+		}
+	]
+}
